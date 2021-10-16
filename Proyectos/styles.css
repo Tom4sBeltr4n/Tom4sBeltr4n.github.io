@@ -49,24 +49,29 @@ main section:only-of-type
 
 section section
 {
-    background-color: rgb(119, 148, 173);
+    background-color: rgb(93, 128, 158);
     text-align: center;
-    flex-direction: column;
+    flex-flow: column wrap;
     padding: 0.5% 1% 0;
     flex-grow: 1;
+    display: flex;
+    border-top: black solid;
+}
+
+section section p
+{
+    padding-bottom: 1.25%;
 }
 
 section.Platzi
 {
     border-right: black solid;
-    border-top: black solid;
-    flex-direction: column;
 }
 
-section.Personal
+section section figcaption p
 {
-    flex-grow: 1;
-    border-top: black solid;
+    text-decoration-line: none;
+    text-decoration-color: black;
 }
 
 footer/*universal*/
