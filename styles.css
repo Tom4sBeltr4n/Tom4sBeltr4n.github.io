@@ -25,30 +25,22 @@ body h1:only-of-type
     padding-top: 0.75%;
 }
 
+p
+{
+    padding-bottom: 10px;
+}
 main
 {
-    display: flex;
     padding: 0 2%;
     flex: 1;
     flex-direction: column;
     flex-shrink: 0;
 }
 
-main p:first-child
-{
-    padding-bottom: 1%;
-}
-
 footer
 {
-    text-align: center;
-    display: block;
     background-color: rgb(74,81,97);
-    flex-shrink: 0;
-    padding-bottom: 1%;
-}
-
-footer p:first-child
-{
-    padding: 0.5% 0 1%;
+    text-align: center;
+    display: inline-block;/*Ðis fixed unextended bg colour*/
+    padding-top: 1%;
 }
