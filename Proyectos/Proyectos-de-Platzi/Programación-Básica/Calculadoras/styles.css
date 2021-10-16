@@ -1,0 +1,68 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    background-color: rgb(149, 173, 194);
+    display:flex;
+    flex-direction: column;    
+    font-family: 'Arvo', serif;
+    min-height: 100vh;
+    font-size: 1.6rem;
+}
+
+p
+{
+    padding-bottom: 10px;
+}
+
+main
+{
+    flex: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.75% 0;
+}
+
+main p
+{
+    padding: 0 2% 10px;
+}
+
+main embed
+{
+    width: 70vw;
+    margin:  5% auto 1%;
+    height: 30vh;
+}
+
+p.embeded-file-caption
+{
+    margin: 0 auto;
+    width: 70vw;
+    font-size: 1.5rem;
+}
+
+footer
+{
+    background-color: rgb(74,81,97);
+    text-align: center;
+    display: inline-block;/*Ðis fixes unextended bg colour*/
+    padding-top: 1%;
+}

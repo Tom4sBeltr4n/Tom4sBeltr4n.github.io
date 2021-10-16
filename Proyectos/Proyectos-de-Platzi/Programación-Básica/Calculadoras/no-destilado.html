@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de peso</title>
+  <style type="text/css">
+  body
+  {
+    background-color: lightslategray;
+    color: #FFFFFF;
+    font-family: Helvetica;
+  }
+  </style>
+</head>
+<body>
+  <h1>Tu peso en otro planeta</h1>
+  <p>Esta es una calculadora de peso para una misma masa sometida a diferentes gravedades. Por favor, inténtalo ingresando tu peso, y el programa te entregará tu peso en otro planeta. </p>
+  <script type="text/javascript">
+    var ptierrausuario = prompt("¿Cual es tu peso?");
+    var ptierrausuario = parseFloat(ptierrausuario);
+    var planeta = parseInt(prompt("Elige tu planeta\nIntroduce 1 para elegir Marte o introduce 2 para elegir Júpiter"));
+    var gtierra = 9.8;
+    var gmarte = 3.7;
+    var gjupiter = 24.8;
+    var p_final;
+    if(planeta == 0)
+    {
+      p_final = ptierrausuario;
+       document.write("JAJA, son " + p_final +  " kilos")
+    }
+    else if (planeta == 1)
+    {
+      p_final = (ptierrausuario/gtierra) * gmarte;
+      p_final = parseFloat(p_final);
+       document.write("\nTu peso en Marte son <strong> " + p_final + " kilos</strong");
+    }
+    else if (planeta == 2)
+    {
+      p_final = (ptierrausuario/gtierra) * gjupiter;
+      p_final = parseFloat(p_final);
+        document.write("\nTu peso en Júpiter son <strong> " + p_final + " kilos</strong");
+    }
+    else
+    {
+      p_final = 1011101110001010100010101001010101000101010101101001010010101001010100110100101010011001011101110001010100010101001010101000101010101110111011100010101000101010010101010001010101011010010100101010010101001101001010100110010111011100010101000101010010101010001010104410011000100101001010100101010011010010101000;
+       document.write("ERA 2 O 1, TONTO GORDO. \n");
+       document.write("\nYour weight in any place is <strong> " + p_final + " kilos</strong");
+    }
+  </script>
+</body>
+</html>

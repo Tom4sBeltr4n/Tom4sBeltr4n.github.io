@@ -1,4 +1,4 @@
-*/* universal */
+*
 {
     margin:0;
     padding:0;
@@ -14,7 +14,7 @@ body
     min-height: 100vh;
 }
 
-h1/*universal*/
+h1
 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -55,12 +55,30 @@ section section
     padding: 0.5% 1% 0;
     flex-grow: 1;
     display: flex;
+    width:50%;
     border-top: black solid;
+    border-bottom: black solid;
 }
 
-section section p
+section>section>p
 {
     padding-bottom: 1.25%;
+}
+
+section>section>div
+{
+    flex-shrink: 1;
+    width: 25%;
+    height:20vh;
+    display: inline;
+    margin:0;
+}
+
+section>section>div img
+{
+    flex-shrink: 1;
+    width: 90%;
+    height:100%;
 }
 
 section.Platzi
@@ -68,16 +86,22 @@ section.Platzi
     border-right: black solid;
 }
 
-section section figcaption p
+section>section figcaption strong
 {
+    font-size: 0.8rem;
+}
+
+section>section figcaption>p
+{
+    font-size: 0.8rem;
     text-decoration-line: none;
     text-decoration-color: black;
 }
 
-footer/*universal*/
+footer
 {
     background-color: rgb(74,81,97);
     text-align: center;
-    display: inline-block;/*Ðis fixed unextended bg colour*/
+    display: inline-block;/*Ðis fixes unextended bg colour*/
     padding-top: 1%;
 }
