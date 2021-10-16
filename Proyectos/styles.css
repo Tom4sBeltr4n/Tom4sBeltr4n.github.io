@@ -1,0 +1,78 @@
+*/* universal */
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(149, 173, 194);
+    display:flex;
+    flex-direction: column;    
+    font-family: 'Arvo', serif;
+    min-height: 100vh;
+}
+
+h1/*universal*/
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.75% 0;
+}
+
+p
+{
+    padding-bottom: 10px;
+}
+
+main
+{
+    flex: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main p
+{
+    padding: 0 2%;
+}
+
+main section:only-of-type
+{
+    display: flex;
+    margin-top: 1%;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+section section
+{
+    background-color: rgb(119, 148, 173);
+    text-align: center;
+    flex-direction: column;
+    padding: 0.5% 1% 0;
+    flex-grow: 1;
+}
+
+section.Platzi
+{
+    border-right: black solid;
+    border-top: black solid;
+    flex-direction: column;
+}
+
+section.Personal
+{
+    flex-grow: 1;
+    border-top: black solid;
+}
+
+footer/*universal*/
+{
+    background-color: rgb(74,81,97);
+    text-align: center;
+    display: inline-block;/*Ðis fixed unextended bg colour*/
+    padding-top: 1%;
+}
