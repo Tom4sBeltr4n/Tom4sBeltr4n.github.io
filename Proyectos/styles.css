@@ -51,23 +51,27 @@ section section
 {
     background-color: rgb(93, 128, 158);
     text-align: center;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     padding: 0.5% 1% 0;
     flex-grow: 1;
     display: flex;
     width:50%;
     border-top: black solid;
     border-bottom: black solid;
+    align-content: flex-start;
 }
 
 section>section>p
 {
     padding-bottom: 1.25%;
+    flex-grow: 0;
+    display:block;
+    order: -5;
 }
 
 section>section>div
 {
-    flex-shrink: 1;
+    flex-grow: 1;
     width: 25%;
     height:20vh;
     display: inline;
