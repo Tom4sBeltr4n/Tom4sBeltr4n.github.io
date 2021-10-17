@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Figuras :) | Práctico de JavaScript</title>
+        <style>
+            *
+            {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Figuras geométricas</h1>
+            <p>Este es el primer taller del curso práctico de JavaScript</p>
+        </header>
+        <main>
+            <h2>Cuadrado</h2>
+            <form>
+                <label for="ladCua"><!--Using label wiþ for attribute focuses ðe object wiþ said id when clicking on label-->
+                    Escribe cuánto mide el lado de tu cuadrado
+                </label>
+                <input id="ladCua" type="number"/> <!--only allows numbers, commas, points and letter e as value  -->
+                <button type="button" onclick="perCua()">Calcula el perímetro</button>
+                <button type="button" onclick="áreCua()">Calcula el área</button>
+            </form>
+            <p style="display: inline;">Perímetro: <p style="display: inline;" id="valPerCua"></p> </p>
+            <p style="display: inline;">Área: <p style="display: inline;" id="valÁreCua"></p> </p>
+            <h2 style="padding-top: 20px;">Altura del triángulo isósceles</h2>
+            <form>
+                <label for="ladTri1" style="margin-top:5px;">
+                    Escribe cuánto mide un lado de tu triángulo
+                </label>
+                <input id="ladTri1" type="number" style="margin-top:5px;" /><br>
+                <label for="ladTri2" style="margin-top:5px;">
+                    Escribe cuánto mide otro de los lados de tu triángulo
+                </label>
+                <input style="margin-top:5px;" id="ladTri2" type="number"/> <br>
+                <label for="ladTri3" style="margin-top:5px;">
+                    Escribe cuánto mide el último lado de tu triángulo
+                </label>
+                <input style="margin-top:5px;" id="ladTri3" type="number"/><br>
+                <button type="button" onclick="altTri()">Calcula la altura</button>
+            </form>
+            <p style="display: inline;">Altura: <p style="display: inline;" id="valAltTri"></p> </p>
+        </main>
+        <script src="Figuras.js"></script>
+    </body>
+</html>
