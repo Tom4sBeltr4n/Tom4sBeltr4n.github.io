@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Descuentos</title>
+        <style>
+            *
+            {
+                color:black;
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Descuentos</h1>
+            <p>Este es el segundo taller del curso práctico de JavaScript</p>
+        </header>
+        <section>
+            <p>Calcula el precio a pagar de tus productos con descuento aquí</p>
+            <form>
+                <label for="inpPri">Escribe el precio de tu producto:</label>
+                <input type="number" id="inpPri"/>
+                <label for="inpDes">Escribe el descuento de tu producto:</label>
+                <input type="number" id="inpDes"/>
+                <button type ="button" onclick="calDes()">¡Calcula!</button>
+            </form>
+            <p id="preFin"></p>
+        </section>
+        <script src="Porcentajes.js"></script>
+    </body>
+</html>
