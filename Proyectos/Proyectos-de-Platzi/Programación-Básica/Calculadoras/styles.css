@@ -21,11 +21,6 @@ body
     font-size: 1.6rem;
 }
 
-p
-{
-    padding-bottom: 10px;
-}
-
 main
 {
     flex: 1;
@@ -44,6 +39,16 @@ h1
 main p
 {
     padding: 0 2% 10px;
+}
+
+p
+{
+    padding-bottom: 10px;
+}
+
+a
+{
+    color: #0645AD;
 }
 
 main embed

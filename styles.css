@@ -39,6 +39,11 @@ main
     flex-shrink: 0;
 }
 
+p a
+{
+    color: #0645AD;
+}
+
 footer
 {
     background-color: rgb(74,81,97);

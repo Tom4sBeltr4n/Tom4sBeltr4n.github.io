@@ -79,6 +79,11 @@ section>section>div
     margin:0;
 }
 
+div a u
+{
+    color: #0645AD;
+}
+
 section>section>div img
 {
     flex-shrink: 1;
