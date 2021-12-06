@@ -35,7 +35,7 @@ main p
     padding: 0 2% 10px;
 }
 
-main .main-project-container
+.main-project-container
 {
     display: flex;
     margin-top: 1%;
@@ -43,40 +43,40 @@ main .main-project-container
     flex-grow: 1;
 }
 
-.main-project-container .platzi, .main-project-container .personal
+.platzi, .personal
 {
-    background-color: rgb(93, 128, 158);
-    text-align: center;
-    flex-flow: row wrap;
-    padding: 0.5% 1% 0;
-    flex-grow: 1;
-    display: flex;
-    width:50%;
-    border-top: black solid;
-    border-bottom: black solid;
-    align-content: flex-start;
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  flex-grow: 1;
+  padding: 0.5% 1% 0;
+  width:50%;
+  border-top: black solid;
+  border-bottom: black solid;
+  background-color: rgb(93, 128, 158);
 }
 
-.main-project-container>section>p
+.container--description
 {
-    padding-bottom: 1.25%;
-    flex-grow: 0;
-    display:block;
-    order: -5;
+  flex-grow: 0;
+  display: block;
+  order: -1;
 }
 
-.main-project-container>section>.vitrina
+.project
 {
-    flex-grow: 1;
-    width: 25%;
-    height:20vh;
-    display: inline;
-    margin:0;
+  display: inline;
+  flex-grow: 1;
+  width: 25%;
+  height: 20vh;
+  margin: 0;
 }
 
-.vitrina a>p
+.project--title
 {
-    color: #0645AD;
+  padding-bottom: 5px;
+  color: #0645AD;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -93,12 +93,7 @@ main .main-project-container
     border-right: black solid;
 }
 
-.main-project-container>section figcaption strong
-{
-    font-size: 0.8rem;
-}
-
-.main-project-container>section figcaption>p
+.project--summary
 {
     font-size: 0.8rem;
     text-decoration-line: none;
@@ -107,8 +102,7 @@ main .main-project-container
 
 footer
 {
-    background-color: rgb(74,81,97);
-    text-align: center;
-    display: inline-block;/*Ðis fixes unextended bg colour*/
-    padding-top: 1%;
+  background-color: rgb(74,81,97);
+  text-align: center;
+  padding-top: 1%;
 }
