@@ -22,11 +22,6 @@ h1
     padding: 0.75% 0;
 }
 
-p
-{
-    padding-bottom: 10px;
-}
-
 main
 {
     flex: 1;
@@ -37,10 +32,10 @@ main
 
 main p
 {
-    padding: 0 2%;
+    padding: 0 2% 10px;
 }
 
-main section:only-of-type
+main .main-project-container
 {
     display: flex;
     margin-top: 1%;
@@ -48,7 +43,7 @@ main section:only-of-type
     flex-grow: 1;
 }
 
-section section
+.main-project-container .platzi, .main-project-container .personal
 {
     background-color: rgb(93, 128, 158);
     text-align: center;
@@ -62,7 +57,7 @@ section section
     align-content: flex-start;
 }
 
-section>section>p
+.main-project-container>section>p
 {
     padding-bottom: 1.25%;
     flex-grow: 0;
@@ -70,7 +65,7 @@ section>section>p
     order: -5;
 }
 
-section>section>div
+.main-project-container>section>.vitrina
 {
     flex-grow: 1;
     width: 25%;
@@ -79,29 +74,31 @@ section>section>div
     margin:0;
 }
 
-div a u
+.vitrina a>p
 {
     color: #0645AD;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-section>section>div img
+.preview
 {
     flex-shrink: 1;
     width: 90%;
     height:100%;
 }
 
-section.Platzi
+.platzi
 {
     border-right: black solid;
 }
 
-section>section figcaption strong
+.main-project-container>section figcaption strong
 {
     font-size: 0.8rem;
 }
 
-section>section figcaption>p
+.main-project-container>section figcaption>p
 {
     font-size: 0.8rem;
     text-decoration-line: none;
